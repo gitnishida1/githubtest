@@ -1,13 +1,4 @@
 
-GitHubへのSSH公開鍵publickeyの登録方法
-
-ログイン後、AccountSetting画面のSSH Keysで「Add SSH Key」を選択。
-TitleはなんでもOK。Keyにid_rsa.pub（公開鍵publickey）の内容をテキストエディタで開いてコピペする。
-登録時にパスワードを聞かれるがその際にはGitHubのパスワードを入力する。
-
-下記の内容のテキストファイルを作成してファイル名を「config」（拡張子なし）で保存する。
-保存場所は「~/.ssh/」。
-
 ---ここから---
 Host github.com
 User git

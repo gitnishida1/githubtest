@@ -1,33 +1,4 @@
-SSH Keyの作成方法(GitHubの使用に必要)
 
-
-Macの場合、OS標準のターミナルを使用。
-Windowsの場合、gitインストール時に同時にインストールされた「Git Bush」を使用する。
-
-ホームディレクトリ（MacはFinderで家のアイコンがついたユーザー名のフォルダ。Windowsはスタートメニューからユーザー名をクリックすると開くフォルダ）に「.ssh」という隠しフォルダがあるか確認する。
-
-ない場合は下記のコマンドを実行：
-$ mkdir ~/.ssh
-
-----
-SSH Keyの作成方法
-
-$ cd ~/.ssh
-
-$ ssh-keygen -t rsa
-
-なにも入力せずにEnterを押す。
-次にパスワードを聞かれるが、これもなにも入力しないでEnterで可。
-
-上記完了後、「.ssh」フォルダ内に下記の2つのファイルができていることを確認する。
-
-　id_rsa　（秘密鍵privatekey）
-　id_rsa.pub　（公開鍵publickey）
-
-
-※id_rsa.pub（公開鍵publickey）のほうをGitHubに登録する。
-
-----
 GitHubへのSSH公開鍵publickeyの登録方法
 
 ログイン後、AccountSetting画面のSSH Keysで「Add SSH Key」を選択。
